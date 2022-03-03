@@ -1,0 +1,47 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Text-Utils</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+          <a class="nav-link" href="#">About</a>
+          <a class="nav-link" href="#">Contect Us</a>
+          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Youtube Channel</a>
+        </div>
+        
+      </div>
+      <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </nav>
+  <div class="alert alert-warning alert-dismissible fade show" role="alert">
+    <strong>Success!</strong> Your text have been analyzed!
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+  </div>
+  <div class="container">
+    <h1>Analyzed Your Text  -  {{purpose}}</h1>
+    <p>
+        <pre>
+            {{analyzed_text}}
+        </pre>
+    </p>
+  </div>
+
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Analyze your text..</title>
+</head>
+<body>
+    <h1>analyze your text - {{purpose}}</h1>
+    <p>
+        {{analyzed_text}}
+    </p>
+</body>
+</html>
